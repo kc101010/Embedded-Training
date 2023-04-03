@@ -15,3 +15,10 @@ Core/Important
 etc
 + RF Programming: SDR, USRP, GNU RADIO
 + Power: Board bring up, optimisations etc
+----
+Project idea: Develop Arduino Alarm clock and use it to learn new core concepts - possibly FPGA/Verilog
+
+---
+Resources 
+https://www.arm.com/glossary/fpga
+https://en.wikipedia.org/wiki/Field-programmable_gate_array
