@@ -5,7 +5,7 @@ Already have
 + Linux kernel modules/drivers
 
 Core/Important
-+ [FPGA: Verilog](https://numato.com/kb/learning-fpga-verilog-beginners-guide-part-1-introduction/)
++ [FPGA: Verilog](https://numato.com/kb/learning-fpga-verilog-beginners-guide-part-1-introduction/) (X)
 + Communication protocols: I2C, SPI, CAN, UART etc
 + Embedded OS: FreeRTOS, Yocto Embedded Linux
 + ARM/RISC devices
@@ -22,3 +22,4 @@ Project idea: Develop Arduino Alarm clock and use it to learn new core concepts 
 Resources 
 https://www.arm.com/glossary/fpga
 https://en.wikipedia.org/wiki/Field-programmable_gate_array
+

@@ -50,3 +50,22 @@ It also makes it easy to implement applications without the need of end-product 
 Application-Specific Integrated Circuit
 
 IC customised for a particular use rather than general purpose. Example could be a digital voice recorder or a high-efficiency bitcoin miner.
+
+---
+# [What's an FPGA?](https://youtu.be/iHg0mmIg0UU)
+
+----
+# [Driving a VGA Display?! Getting started with an FPGA! (TinyFPGA)](https://youtu.be/ZNunxg7o8l0)
+
+Several register devices - programming logic blocks (PLBs) consisting of logic gates and LUTs are used within a microcontroller-esque system to provide a re-programmable device with several open-ended uses and applications. 
+
+Able to create logic circuits in hardware, huge difference to a microcontroller as it is able to handle several tasks at once which can sometimes be complex for microcontrollers.
+
+Code is used to describe the hardware i.e. HDL like Verilog or VHDL. A visual programming language/editor is used to program the FPGA in the video. 
+
+Key terms:
+Logic gates
+Programmable
+Programmable Logic Blocks
+Look up tables (LUTs)
+Registers
