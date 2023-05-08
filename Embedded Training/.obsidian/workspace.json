@@ -44,6 +44,18 @@
             }
           },
           {
+            "id": "65c630139d059ff7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "SPI.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "7f7f864fb8ad4718",
             "type": "leaf",
             "state": {
@@ -54,7 +66,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -128,7 +140,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "FPGA.md",
+                "file": "SPI.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -145,7 +157,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "FPGA.md",
+                "file": "SPI.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -168,7 +180,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "FPGA.md"
+                "file": "SPI.md"
               }
             }
           }
@@ -189,11 +201,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "54349badabdc3958",
+  "active": "65c630139d059ff7",
   "lastOpenFiles": [
+    "FPGA.md",
+    "SPI.md",
     "I2C Protocol.md",
     "Study.md",
-    "FPGA.md",
     "TexIns-I2C-Bus.pdf",
     "Unconfirmed 383293.crdownload"
   ]
