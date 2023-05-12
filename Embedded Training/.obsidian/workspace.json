@@ -49,7 +49,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SPI.md",
+                "file": "RTOS.md",
                 "mode": "source",
                 "source": false
               }
@@ -140,7 +140,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "SPI.md",
+                "file": "RTOS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -157,7 +157,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "SPI.md",
+                "file": "RTOS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -180,7 +180,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "SPI.md"
+                "file": "RTOS.md"
               }
             }
           }
@@ -203,10 +203,15 @@
   },
   "active": "65c630139d059ff7",
   "lastOpenFiles": [
-    "FPGA.md",
+    "OS Study CodeAcademy/Intro.md",
+    "OS Study CodeAcademy/OS Fundamentals.md",
+    "OS Study CodeAcademy/Hardware.md",
+    "RTOS.md",
+    "OS Study CodeAcademy",
     "SPI.md",
     "I2C Protocol.md",
     "Study.md",
+    "FPGA.md",
     "TexIns-I2C-Bus.pdf",
     "Unconfirmed 383293.crdownload"
   ]
