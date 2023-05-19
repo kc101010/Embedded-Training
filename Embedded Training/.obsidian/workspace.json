@@ -44,18 +44,6 @@
             }
           },
           {
-            "id": "65c630139d059ff7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "RTOS.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "7f7f864fb8ad4718",
             "type": "leaf",
             "state": {
@@ -140,7 +128,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "RTOS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -157,7 +144,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "RTOS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -179,9 +165,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "RTOS.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -201,18 +185,27 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "65c630139d059ff7",
+  "active": "ada098ce1836f76d",
   "lastOpenFiles": [
+    "GPIO kernel module/GPIO.md",
+    "GPIO kernel module/Simple GPIO LED driver/gpio_led_drv/gpio_led.mod.o",
+    "GPIO kernel module/Simple GPIO LED driver/gpio_led_drv/gpio_led.ko",
+    "GPIO kernel module/Simple GPIO LED driver/gpio_led_drv/Module.symvers",
+    "GPIO kernel module/Simple GPIO LED driver/gpio_led_drv/gpio_led.mod.c",
+    "GPIO kernel module/Simple GPIO LED driver/gpio_led_drv/modules.order",
+    "GPIO kernel module/Simple GPIO LED driver/gpio_led_drv/gpio_led.o",
+    "GPIO kernel module/Simple GPIO LED driver/gpio_led_drv/gpio_led.mod",
+    "GPIO kernel module/Simple GPIO LED driver/gpio_led_drv/gpio_led.c",
+    "GPIO kernel module/Simple GPIO LED driver/gpio_led_drv/Makefile",
+    "GPIO kernel module/Simple GPIO LED driver/gpio_led_drv/Compile.sh",
+    "FPGA.md",
+    "().md",
+    "RTOS.md",
     "OS Study CodeAcademy/Intro.md",
     "OS Study CodeAcademy/OS Fundamentals.md",
     "OS Study CodeAcademy/Hardware.md",
-    "RTOS.md",
-    "OS Study CodeAcademy",
     "SPI.md",
     "I2C Protocol.md",
-    "Study.md",
-    "FPGA.md",
-    "TexIns-I2C-Bus.pdf",
-    "Unconfirmed 383293.crdownload"
+    "Study.md"
   ]
 }

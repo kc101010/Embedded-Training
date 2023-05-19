@@ -1,0 +1,1 @@
+cmd_/media/kyle/maxone/Programming/gpio_led_drv/Module.symvers :=  sed 's/ko$$/o/'  /media/kyle/maxone/Programming/gpio_led_drv/modules.order | scripts/mod/modpost -m -a    -o /media/kyle/maxone/Programming/gpio_led_drv/Module.symvers -e -i Module.symvers -T - 
