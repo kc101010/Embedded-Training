@@ -52,9 +52,21 @@
                 "file": "TexIns-I2C-Bus.pdf"
               }
             }
+          },
+          {
+            "id": "4803aa1ddf0ab0b3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "GPIO kernel module/GPIO.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -128,6 +140,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "GPIO kernel module/GPIO.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -144,6 +157,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "GPIO kernel module/GPIO.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -165,7 +179,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "GPIO kernel module/GPIO.md"
+              }
             }
           }
         ]
@@ -185,8 +201,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ada098ce1836f76d",
+  "active": "4803aa1ddf0ab0b3",
   "lastOpenFiles": [
+    "FPGA.md",
+    "Study.md",
     "GPIO kernel module/GPIO.md",
     "GPIO kernel module/Simple GPIO LED driver/gpio_led_drv/gpio_led.mod.o",
     "GPIO kernel module/Simple GPIO LED driver/gpio_led_drv/gpio_led.ko",
@@ -198,14 +216,12 @@
     "GPIO kernel module/Simple GPIO LED driver/gpio_led_drv/gpio_led.c",
     "GPIO kernel module/Simple GPIO LED driver/gpio_led_drv/Makefile",
     "GPIO kernel module/Simple GPIO LED driver/gpio_led_drv/Compile.sh",
-    "FPGA.md",
     "().md",
     "RTOS.md",
     "OS Study CodeAcademy/Intro.md",
     "OS Study CodeAcademy/OS Fundamentals.md",
     "OS Study CodeAcademy/Hardware.md",
     "SPI.md",
-    "I2C Protocol.md",
-    "Study.md"
+    "I2C Protocol.md"
   ]
 }

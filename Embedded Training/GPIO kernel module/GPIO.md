@@ -5,6 +5,7 @@ Uncommitted digital signal pin on an IC or electronic circuit board.
 May be used as input, output or both, controllable by software.
 
 Only limited by eletrical and timing specs of GPIO interface and the ability of software to interact with GPO in a timely manner. 
+![[pi4j-rpi-400-pinout.png]]
 
 # GPIOs
 
