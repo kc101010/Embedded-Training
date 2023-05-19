@@ -1,1 +1,0 @@
-cmd_/media/kyle/maxone/Programming/gpio_led_drv/gpio_led.ko := ld -r -EL  -maarch64elf -z noexecstack --build-id=sha1  -T scripts/module.lds -o /media/kyle/maxone/Programming/gpio_led_drv/gpio_led.ko /media/kyle/maxone/Programming/gpio_led_drv/gpio_led.o /media/kyle/maxone/Programming/gpio_led_drv/gpio_led.mod.o;  true
