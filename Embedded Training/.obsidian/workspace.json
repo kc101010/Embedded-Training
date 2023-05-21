@@ -40,7 +40,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -114,7 +114,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "GPIO kernel module/OLED GPIO Driver.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -131,7 +130,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "GPIO kernel module/OLED GPIO Driver.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -153,9 +151,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "GPIO kernel module/OLED GPIO Driver.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -175,8 +171,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4803aa1ddf0ab0b3",
+  "active": "f573a6238fc06c98",
   "lastOpenFiles": [
+    "Study.md",
     "GPIO kernel module/GPIO.md",
     "GPIO kernel module/OLED GPIO Driver.md",
     "RTOS.md",
@@ -186,7 +183,6 @@
     "Communication Protocols/SPI.md",
     "Communication Protocols/I2C.md",
     "Communication Protocols/CAN.md",
-    "Study.md",
     "Communication Protocols",
     "GPIO kernel module/Raspberry-Pi-GPIO-Layout-Model-B-Plus-rotated-2700x900.png",
     "GPIO kernel module/Simple GPIO LED driver/gpio_led_drv/gpio_led.mod.o",
