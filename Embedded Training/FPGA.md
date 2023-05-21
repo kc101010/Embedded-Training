@@ -69,3 +69,38 @@ Programmable
 Programmable Logic Blocks
 Look up tables (LUTs)
 Registers
+
+----
+
+# [ The "Do Anything" Chip: FPGA](https://youtu.be/ePwo3P1iZO4)
+
+Reprogrammable, configurable chip that can be used for various functions. Using building blocks in logic gates and so on.
+
+The FPGA usually also includes I/O blocks to connect various peripherals (ethernet and so on).
+
+Good for cost (as FGPA can reprogrammed and reused) and for implementing later improvements (is flexible) though less accessible (due to high price of the board).
+
+Often the fastest solution with regards to microcontroller-esque task.
+
+Better option than developing own ASIC or similar boards.
+
+Uses a config memory to store configurations/config file.
+
+Is good for quick iterations and rapid style lifecycles.
+
+Programmed in HDL such as Verilog or VHDL to describe the intended circuit, this code is then compiled into a configuration file that is loaded onto the board. 
+
+There are some challenges: Specialised knowledge, More power hungry.
+
+Good choice when performance and flexibility are critical. 
+
+Various board types with own advantages and disadvantages.
+
+Growing interest for FPGA use in ML and AI applications. 
+
+Mix type FPGA boards that include microprocessors or GPUs.
+
+Industry move to cloud-based FPGA deployment/services.
+
+Development of Open source FPGA tools and tech to make the FPGA more accessible.
+

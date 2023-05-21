@@ -30,8 +30,33 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "f573a6238fc06c98",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "FPGA.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "5d7a92dce3f1baa3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Communication Protocols/CAN.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -89,8 +114,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "6d72a773c92d24c3",
@@ -106,7 +130,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Study.md",
+                "file": "Communication Protocols/CAN.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +147,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Study.md",
+                "file": "Communication Protocols/CAN.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +170,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Study.md"
+                "file": "Communication Protocols/CAN.md"
               }
             }
           }
@@ -167,12 +191,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b061a580182806c8",
+  "active": "5d7a92dce3f1baa3",
   "lastOpenFiles": [
-    "Communication Protocols/CAN.md",
-    "Communication Protocols",
-    "Study.md",
     "FPGA.md",
+    "Communication Protocols/CAN.md",
+    "Study.md",
+    "Communication Protocols",
     "GPIO kernel module/GPIO.md",
     "GPIO kernel module/Raspberry-Pi-GPIO-Layout-Model-B-Plus-rotated-2700x900.png",
     "GPIO kernel module/Simple GPIO LED driver/gpio_led_drv/gpio_led.mod.o",

@@ -78,3 +78,20 @@ At the bit level, each transmitted bit is monitored by the transmitter of the me
 The final method is with the bit-stuffing rules. After 5 consecutive bits of the same logic level, if the next bit is *not* a complement then an error is generated. Stuffing makes sure that rising edges are available for on-going network synchronisation. It also ensures that a stream of bits will not be mistaken for an error frame or the 7-bit interframe space which signifies a messages end. Stuffed bits are removed by a receiving nodes controller before data is forwarded to the application.
 
 In using this logic, an active error frame consists of 6 dominant bits which violates the bit stuffing rule. This is interpreted as an erro rby all CAN nodes which will then generate their own error frame. Meaning that an error frame can be up to 12 bits long (including the preceding 6) with all the replies. This error frame is then followed by a delimiter field of 8 recessive bits and a bus idle period before the corrupted message is retransmitted. It should be noted that the retransmitted message still has to contend for arbitration on the bus. 
+
+# [Introduction to the Controller Area Network (CAN)](https://youtu.be/8nl3XkL1eTc)
+
+Vehicles today use several communication units aka nodes that control some of the most critical aspects of the car. These nodes themself are critical for reliability and so on. 
+
+Most used vehicle communication network. 
+
+Has low cost as each node is placed on a single CAN bus. Is efficient as everything is message based, nodes can determine whether or not a message is relevant to read. Is reliable as it uses 5 methods of error detection. Robust as the CAN lines are resistant to eletrical interruptions, the nodes themselves have temperature resistant and fault tolerant varieties. CAN is flexible as nodes can be added and removed with no hardware or software modification to be performed. 
+
+Is used in ECU and sensor communication in almost all automotive applications. Growing in popularity in industrial applications such as building automation, medical devices and aviation. 
+
+# [Improving my electric longboard with a CAN Bus! What can the CAN Bus do? EB#44](https://youtu.be/PL0TPdrhMuI)
+
+Cheap to implement.
+ID-based priority system.
+
+High-speed CAN, low-speed CAN and CAN-FD.
