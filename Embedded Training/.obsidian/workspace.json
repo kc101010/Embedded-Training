@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "GPIO kernel module/GPIO.md",
+                "file": "GPIO kernel module/OLED GPIO Driver.md",
                 "mode": "source",
                 "source": false
               }
@@ -40,7 +40,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -114,6 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "GPIO kernel module/OLED GPIO Driver.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,6 +131,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "GPIO kernel module/OLED GPIO Driver.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -151,7 +153,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "GPIO kernel module/OLED GPIO Driver.md"
+              }
             }
           }
         ]
@@ -171,9 +175,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f573a6238fc06c98",
+  "active": "4803aa1ddf0ab0b3",
   "lastOpenFiles": [
     "GPIO kernel module/GPIO.md",
+    "GPIO kernel module/OLED GPIO Driver.md",
     "RTOS.md",
     "FPGA.md",
     "Bin",
