@@ -1,3 +1,5 @@
+#generalconcepts 
+
 https://en.wikipedia.org/wiki/General-purpose_input/output
 
 General purpose input/output.

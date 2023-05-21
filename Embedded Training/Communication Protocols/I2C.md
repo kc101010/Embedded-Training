@@ -1,4 +1,6 @@
 
+#communicationprot 
+
 # [Texas Instruments: Understanding the I2C Bus](https://www.ti.com/lit/an/slva704/slva704.pdf)
 
 ## Core points/abstract

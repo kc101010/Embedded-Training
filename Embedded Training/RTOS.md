@@ -1,3 +1,4 @@
+#generalconcepts 
 
 ## [An Operating System on a $4 Board? | Getting Started with FreeRTOS on the Raspberry Pi Pico](https://youtu.be/5pUY7xVE2gU)
 

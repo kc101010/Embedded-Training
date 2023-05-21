@@ -35,28 +35,12 @@
             "id": "f573a6238fc06c98",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "FPGA.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "5d7a92dce3f1baa3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Communication Protocols/CAN.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "graph",
+              "state": {}
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -130,7 +114,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Communication Protocols/CAN.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,7 +130,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Communication Protocols/CAN.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -169,9 +151,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Communication Protocols/CAN.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -191,13 +171,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5d7a92dce3f1baa3",
+  "active": "f573a6238fc06c98",
   "lastOpenFiles": [
+    "GPIO kernel module/GPIO.md",
+    "RTOS.md",
     "FPGA.md",
+    "Bin",
+    "Bin/OS Study CodeAcademy/Hardware.md",
+    "Communication Protocols/SPI.md",
+    "Communication Protocols/I2C.md",
     "Communication Protocols/CAN.md",
     "Study.md",
     "Communication Protocols",
-    "GPIO kernel module/GPIO.md",
     "GPIO kernel module/Raspberry-Pi-GPIO-Layout-Model-B-Plus-rotated-2700x900.png",
     "GPIO kernel module/Simple GPIO LED driver/gpio_led_drv/gpio_led.mod.o",
     "GPIO kernel module/Simple GPIO LED driver/gpio_led_drv/gpio_led.ko",
@@ -207,13 +192,8 @@
     "GPIO kernel module/Simple GPIO LED driver/gpio_led_drv/gpio_led.o",
     "GPIO kernel module/Simple GPIO LED driver/gpio_led_drv/gpio_led.mod",
     "GPIO kernel module/Simple GPIO LED driver/gpio_led_drv/gpio_led.c",
-    "GPIO kernel module/Simple GPIO LED driver/gpio_led_drv/Makefile",
     "().md",
-    "RTOS.md",
-    "OS Study CodeAcademy/Intro.md",
-    "OS Study CodeAcademy/OS Fundamentals.md",
-    "OS Study CodeAcademy/Hardware.md",
-    "Communication Protocols/SPI.md",
-    "Communication Protocols/I2C.md"
+    "Bin/OS Study CodeAcademy/Intro.md",
+    "Bin/OS Study CodeAcademy/OS Fundamentals.md"
   ]
 }
