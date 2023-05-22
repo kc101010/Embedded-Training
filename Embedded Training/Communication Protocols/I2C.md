@@ -91,3 +91,10 @@ So I2C is a system of timing and data transfer allowing for communication betwee
 GY-80 breakout and GY-521 breakout, data from 8 different sensors using I2C.
 `i2c_scanner` sketch on Arduino examples.
 Uses Wire library to transmit and read data.
+
+# [ I2C Introduction – Part 1 (Basics)](https://embetronicx.com/tutorials/tech_devices/i2c_1/)
+
+
+# [ I2C Protocol Introduction – Part 2 (Advanced Topics)](https://embetronicx.com/tutorials/tech_devices/i2c_2/)
+
+# [ I2C Client Linux Device Driver – Linux Device Driver Tutorial Part 37](https://embetronicx.com/tutorials/linux/device-drivers/i2c-linux-device-driver-using-raspberry-pi/#Data_in_SSD1306_OLED)

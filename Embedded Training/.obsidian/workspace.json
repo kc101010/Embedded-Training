@@ -35,6 +35,18 @@
             "id": "f573a6238fc06c98",
             "type": "leaf",
             "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Communication Protocols/I2C.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "5f23d24c5eab892c",
+            "type": "leaf",
+            "state": {
               "type": "graph",
               "state": {}
             }
@@ -114,6 +126,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Communication Protocols/I2C.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,6 +143,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Communication Protocols/I2C.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -151,7 +165,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Communication Protocols/I2C.md"
+              }
             }
           }
         ]
@@ -173,15 +189,15 @@
   },
   "active": "f573a6238fc06c98",
   "lastOpenFiles": [
+    "GPIO kernel module/OLED GPIO Driver.md",
+    "Communication Protocols/I2C.md",
     "Study.md",
     "GPIO kernel module/GPIO.md",
-    "GPIO kernel module/OLED GPIO Driver.md",
     "RTOS.md",
     "FPGA.md",
     "Bin",
     "Bin/OS Study CodeAcademy/Hardware.md",
     "Communication Protocols/SPI.md",
-    "Communication Protocols/I2C.md",
     "Communication Protocols/CAN.md",
     "Communication Protocols",
     "GPIO kernel module/Raspberry-Pi-GPIO-Layout-Model-B-Plus-rotated-2700x900.png",
