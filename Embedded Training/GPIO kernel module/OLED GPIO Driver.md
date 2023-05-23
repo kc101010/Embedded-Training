@@ -1,5 +1,7 @@
+#project
+
 [[I2C]] 
- [[GPIO]]
+[[GPIO]]
 
 # [ Let's code a Linux Driver - 5: LCD text display driver (HD44780)](https://youtu.be/HH3OOtJwBz4)
 

@@ -94,7 +94,78 @@ Uses Wire library to transmit and read data.
 
 # [ I2C Introduction – Part 1 (Basics)](https://embetronicx.com/tutorials/tech_devices/i2c_1/)
 
+2 wire interface to connect low-speed devices like MCUs, EEPROMS, A/D & D/A converters, I/O Interfaces and other similar peripherals. It was originally created by Phillips.
+
+Popular due to its simpicity. Simple to implement even on cheap microcontrollers, just need 2 free I/O pins and some simple i2c routines to send/receive commands.
+
+Tranferring to and from the master device is serial and split into 8-bit packets.
+
+4 operating speed categories for bidirectional data transfer
++ Standard Mode (Sm) : bit rate up to 100 kbit/s
++ Fast Mode (Fm) : bit rate up to 400 kbit/s
++ Fast-mode Plus (Fm+) : bit rate up to 1 Mbit/s
++ High-speed Mode (Hs-mode) : bit rate up to 3.4 Mbit/s
++ Ultra-fast mode (UFm) : bit rate up to 5 Mbit/s
+
+## The interface
+Uses only 2 wires:
++ SCL - serial clock
++ SDA - serial data
+
+Both need to be pulled up (w/ resistor) to +Vdd.
+
+## Addressing
+Basic communication uses transfers of 8 bits (or a single byte). Each slave device has a 7-bit address that must be unique on the bus. Some devices have fixed addresses while others have a few address lines that determine the lower bits of the address. It is possible that some devices may use a 10 bit address. 
+
+The 7 bit address uses bits 7 to 1 with bit 0 used to signal a device read or write operation. If bit 0 is set to 1 then the master will read from the slave. It's not necessary for the master to have an address as it generates the clock and addresses slave devices individually. 
+
+
+## Protocol
+In a normal state, both lines are high, communication is initiated by  the master device. It first sets the Start condition (S) followed by the slave address. If bit 0 of the address byte was set to 0, the master will write to the slave. Otherwise, the next byte is read from the slave. Once all bytes are read/written, the master sets the Stop condition which signals to other devices that communication has ended and the bus is now available for use. 
+
+![[i2c-protocol.webp]]
+
+Most I2C devices support repeat start conditions. Meaning the master can repeat the start condition before communication ends and change modes with the current slave.
+
+## Conclusion
++ Widely-used
++ Simple to implement
++ Can be used with any microcontroller
++ The specification is flexible
 
 # [ I2C Protocol Introduction – Part 2 (Advanced Topics)](https://embetronicx.com/tutorials/tech_devices/i2c_2/)
+
+Each device has the possibility of being a transmitter, a receiver or both. Some devices are masters which generate bus clocks and iniate communication on the bus. Others are slaves which respond to commands based on the bus. Master devices typically consist of Microcontrollers etc where Slaves are typically peripheral/hardware.
+
+## Terminology
++ Transmitter: device that transmits data to the bus
++ Receiver: device that receives data from the bus
++ Master: device that generates the clock, starts/stops communication, sends commands 
++ Slave: device that listens to the bus and addressed by the master
++ Multi-master: It's possible for I2C to use more than 1 master, all can send commands
++ Arbitration: A process to determine which master can use the bus when more masters need to use it
++ Synchronisation: Process to synchronize clocks of 2 or more devices
+
+## Protocol
+
+### Bus signals
+Both singals are bidirectional, and are connected to a positive power supply voltage via resistors. This means when the bus is free, both lines are high and activating the line means pulling it down.  All bus devices must have open-collector or open-drain pins.
+
+The number of possible devices on a single bus is almost unlimited with the only requirement being that bus capacitance doesn't exceed 400 pF (as logical 1 level depends on the supply voltage, there is no standard bus voltage).
+
+### Serial Data Transfer
+For each clock pulse, 1 bit of data is transferred. The SDA signal can only change when the SCL signal is low thus when the clock is high, the data should be stable. 
+
+#### Start and Stop Condition
+Each command initiated by the master starts with a *START* condition and ends with a *STOP* condition. For both conditions, SCL must be high. 
+
+A transition of high to low on the SDA is considered a *START*.
+A transition of low to high is considered a *STOP*.
+
+After the *START*, the bus is considered to be busy. It can only be used by another master after the next *STOP*. After the *START*, it's possible for the master to generate a repeated *START* condition which is equivalent to a normal start (and usually followed by the slave address).
+
+If a microcontroller has dedicated I2C hardware then it can easily detect changes on the bus and even behave as a slave. If the communication is implemented in software then the bus singals must be sampled at least 2 times per clock cycle in order to detect all necessary changes.
+
+## Data Transfer
 
 # [ I2C Client Linux Device Driver – Linux Device Driver Tutorial Part 37](https://embetronicx.com/tutorials/linux/device-drivers/i2c-linux-device-driver-using-raspberry-pi/#Data_in_SSD1306_OLED)

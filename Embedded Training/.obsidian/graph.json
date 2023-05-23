@@ -20,6 +20,20 @@
         "a": 1,
         "rgb": 469983
       }
+    },
+    {
+      "query": "tag:#electonicstheory",
+      "color": {
+        "a": 1,
+        "rgb": 6358430
+      }
+    },
+    {
+      "query": "tag:#project",
+      "color": {
+        "a": 1,
+        "rgb": 16734464
+      }
     }
   ],
   "collapse-display": false,

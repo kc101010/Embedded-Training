@@ -25,18 +25,6 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "GPIO kernel module/OLED GPIO Driver.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f573a6238fc06c98",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
                 "file": "Communication Protocols/I2C.md",
                 "mode": "source",
                 "source": false
@@ -52,7 +40,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -187,11 +175,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f573a6238fc06c98",
+  "active": "4803aa1ddf0ab0b3",
   "lastOpenFiles": [
-    "GPIO kernel module/OLED GPIO Driver.md",
     "Communication Protocols/I2C.md",
+    "Electronics Theory/Capacitors.md",
+    "GPIO kernel module/OLED GPIO Driver.md",
     "Study.md",
+    "Electronics Theory/Untitled",
+    "Electronics Theory",
+    "Communication Protocols/I2C assets/i2c-protocol.webp",
+    "Communication Protocols/I2C assets",
     "GPIO kernel module/GPIO.md",
     "RTOS.md",
     "FPGA.md",
@@ -206,9 +199,6 @@
     "GPIO kernel module/Simple GPIO LED driver/gpio_led_drv/Module.symvers",
     "GPIO kernel module/Simple GPIO LED driver/gpio_led_drv/gpio_led.mod.c",
     "GPIO kernel module/Simple GPIO LED driver/gpio_led_drv/modules.order",
-    "GPIO kernel module/Simple GPIO LED driver/gpio_led_drv/gpio_led.o",
-    "GPIO kernel module/Simple GPIO LED driver/gpio_led_drv/gpio_led.mod",
-    "GPIO kernel module/Simple GPIO LED driver/gpio_led_drv/gpio_led.c",
     "().md",
     "Bin/OS Study CodeAcademy/Intro.md",
     "Bin/OS Study CodeAcademy/OS Fundamentals.md"
