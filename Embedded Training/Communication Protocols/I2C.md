@@ -167,5 +167,28 @@ After the *START*, the bus is considered to be busy. It can only be used by anot
 If a microcontroller has dedicated I2C hardware then it can easily detect changes on the bus and even behave as a slave. If the communication is implemented in software then the bus singals must be sampled at least 2 times per clock cycle in order to detect all necessary changes.
 
 ## Data Transfer
+Transferred in 8-bit packets and there is no limitation on the number of bytes though each byte must be followed by acknowledge bit. (Which singals whether the device is ready to proceed with the next byte). 
+
+For all data bits (including the Ack), it is necessary for the master to generate clock pulses. If the slave doesn't acknowledge the transfer, this means there is no more data or the device isn't yet ready for the transfer. In this case the Master must either generate a *STOP* or repeated *START* condition. 
+
+### Synchronisation
+Each master device must generate its own clock signal where data can change only when the clock is low. In order to provide successful bus arbitration, it's necessary to have a synchronized clock. 
+
+When a master pulls the clock low, it stays low until all masters put the clock into a high state. Similarly, the clock is high until the first master pulls it low. This way, Master devices can simply sync their clocks by watching the SCL signal. 
+
+### Clock Stretching
+While the clock master determines the clock speed, there are sometimes where an I2C slave is unable to properly work with masters given clock speed and needs to slow down. This is known as clock stretching.
+
+A slave has the ability to hold down the clock if it needs to reduce bus speed. The master must read back the clock signal after releasing it to a high state and wait until the line has gone high. 
+
+### Arbitration
+A typical data transfer on the I2C bus means only one master can be active. If 2 masters start the line at the same time then arbitration is used to determine which master continues with their command.
+
+Arbitration is performed on the SDA signal while SCL is high. Each master checks whehter the SDA signal on the bus matches the generated SDA signal. If the SDA signal on the bus is low but should be high, then this specific master has lost the arbitration and will not continue. Master devices which have lost arbitration can generate SCL pulses until the byte ends, they must then release the bus and enter slave mode.
+
+It's possible for the arbitration procedure to continue until all data is transferred therefore in a multi-master system, each master needs to monitor the bus for collisions and react as expected.
+
+### Clock synchronisation and Handshaking
+Slaves which need time to process the received byte or aren't prepared to send the next byte have the ability to pull the clock low which signals that the master should wait. When the clock is released, the master can then proceed with the next byte. 
 
 # [ I2C Client Linux Device Driver – Linux Device Driver Tutorial Part 37](https://embetronicx.com/tutorials/linux/device-drivers/i2c-linux-device-driver-using-raspberry-pi/#Data_in_SSD1306_OLED)
