@@ -38,9 +38,33 @@
               "type": "graph",
               "state": {}
             }
+          },
+          {
+            "id": "d7392323ba7acb1b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "GPIO kernel module/OLED GPIO Driver.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "914c8ee76c828125",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "GPIO kernel module/GPIO.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -114,7 +138,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Communication Protocols/I2C.md",
+                "file": "GPIO kernel module/OLED GPIO Driver.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -131,7 +155,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Communication Protocols/I2C.md",
+                "file": "GPIO kernel module/OLED GPIO Driver.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -154,7 +178,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Communication Protocols/I2C.md"
+                "file": "GPIO kernel module/OLED GPIO Driver.md"
               }
             }
           }
@@ -175,17 +199,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4803aa1ddf0ab0b3",
+  "active": "d7392323ba7acb1b",
   "lastOpenFiles": [
-    "Communication Protocols/I2C.md",
-    "Electronics Theory/Capacitors.md",
+    "GPIO kernel module/GPIO.md",
     "GPIO kernel module/OLED GPIO Driver.md",
+    "Communication Protocols/I2C.md",
+    "GPIO kernel module/Raspberry-Pi-GPIO-Layout-Model-B-Plus-2700x900.png",
+    "Electronics Theory/Capacitors.md",
     "Study.md",
     "Electronics Theory/Untitled",
     "Electronics Theory",
     "Communication Protocols/I2C assets/i2c-protocol.webp",
     "Communication Protocols/I2C assets",
-    "GPIO kernel module/GPIO.md",
     "RTOS.md",
     "FPGA.md",
     "Bin",

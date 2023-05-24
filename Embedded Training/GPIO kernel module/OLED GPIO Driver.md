@@ -31,3 +31,10 @@ Able to use `echo` with `>` to give string input from the command line which is 
 This is a userspace application intended to control an OLED but this will be useful to use as an inspiration for own driver and insight into what may/may not be required. 
 
 # [SSD1306: Advance Information pdf](https://cdn-shop.adafruit.com/datasheets/SSD1306.pdf)
+
+# [I2C Part 2 - Enabling I²C on the Raspberry Pi](https://www.abelectronics.co.uk/kb/article/1/i2c-part-2---enabling-i-c-on-the-raspberry-pi)
+
+# [torvalds/linux/i2c.h](https://github.com/torvalds/linux/blob/master/include/linux/i2c.h)
+
+# [Embetronicx/Tutorials/SSD1306_I2C_Driver](https://github.com/Embetronicx/Tutorials/tree/master/Linux/Device_Driver/I2C-Linux-Device-Driver/SSD1306_I2C_Driver)
+

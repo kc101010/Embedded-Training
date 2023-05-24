@@ -8,7 +8,7 @@ May be used as input, output or both, controllable by software.
 
 Only limited by eletrical and timing specs of GPIO interface and the ability of software to interact with GPO in a timely manner. 
 
-![[Raspberry-Pi-GPIO-Layout-Model-B-Plus-rotated-2700x900.png]]
+![[Raspberry-Pi-GPIO-Layout-Model-B-Plus-2700x900.png]]
 
 
 

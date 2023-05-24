@@ -192,3 +192,17 @@ It's possible for the arbitration procedure to continue until all data is transf
 Slaves which need time to process the received byte or aren't prepared to send the next byte have the ability to pull the clock low which signals that the master should wait. When the clock is released, the master can then proceed with the next byte. 
 
 # [ I2C Client Linux Device Driver – Linux Device Driver Tutorial Part 37](https://embetronicx.com/tutorials/linux/device-drivers/i2c-linux-device-driver-using-raspberry-pi/#Data_in_SSD1306_OLED)
+
+# [ How to use SSD1306 128x64 OLED Display I2C with Arduino code](https://youtu.be/UmYiHTOz-5k)
+
+
+**Arduino layout**
+SDA to A4
+SCL to A5
+Vcc is 3.3v/5v
+GND to GND
+
+
+SSD1306 address is 0x3C, another possible address is 0x3D. Based on the Arduino alarm code, I can likely use 0x3C.
+
+Video isn't very useful for code-writing but good for setup etc. 
