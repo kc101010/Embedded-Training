@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Study.md",
+                "file": "I2C OLED driver/i2c oled project notes.md",
                 "mode": "source",
                 "source": false
               }
@@ -63,8 +63,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -138,7 +137,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Interrupts.md",
+                "file": "I2C OLED driver/i2c oled project notes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -155,7 +154,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Interrupts.md",
+                "file": "I2C OLED driver/i2c oled project notes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -178,7 +177,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Interrupts.md"
+                "file": "I2C OLED driver/i2c oled project notes.md"
               }
             }
           }
@@ -199,16 +198,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d4cf2cecfecddc45",
+  "active": "b061a580182806c8",
   "lastOpenFiles": [
+    "I2C OLED driver/i2c oled project notes.md",
+    "Communication Protocols/I2C.md",
+    "Study.md",
+    "GPIO kernel module/GPIO.md",
+    "Glossary.md",
     "Interrupts.md",
     "FPGA.md",
-    "Glossary.md",
-    "GPIO kernel module/GPIO.md",
     "Untitled",
     "Embedded course/MCU Concepts.md",
-    "Study.md",
-    "Communication Protocols/I2C.md",
     "GPIO kernel module/OLED Driver.md",
     "Embedded course/Intro.md",
     "Embedded course",
