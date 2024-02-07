@@ -10,3 +10,6 @@
 
 # [SSD1306 Display Problems](https://iotexpert.com/debugging-ssd1306-display-problems/)
 
+
+
+https://en.wikipedia.org/wiki/Framebuffer

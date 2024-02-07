@@ -13,7 +13,7 @@ MODULE_DESCRIPTION("I2C driver to turn on an SSD1306 OLED");
 #define I2C_BUS_AVAILABLE 	1
 #define OLED_ADDR 		0x3C
 #define OLED_NAME 		"OLED"
-#define DISPLAY_BUFFER_SZ 	(512 + 1)
+#define DISPLAY_BUFFER_SZ 	(1024 + 1)
 
 static struct i2c_adapter *adapter = NULL; 	//this struct seems to represent the I2C connection
 static struct i2c_client *client_oled = NULL; 		//this struct represents the client, in this case the OLED
@@ -112,7 +112,7 @@ void drw_pixel_oled(int x, int y){
 
 	//calculate cell address, add offset for DMA
 	row = y / 8;
-	cell = (x + row * 128) + offset;
+	cell = (x + row * 64) + offset;
 	bit = (1 << y % 8);
 
 	display_buffer[cell] |= bit;
@@ -127,13 +127,8 @@ Examples:
 	fill_oled('a');		//results in a segmented fill
 */
 static void fill_oled(unsigned char data){
-	//128 segments of 8 bit data used to represent full display
-	unsigned int total = 128 * 8;
-	unsigned int i = 0;
-
-	//write given data to each row/col of OLED
-	for(i = 0; i < total; i++) write_oled(false, data);
-	//memset(display_buffer, (int)data, DISPLAY_BUFFER_SZ);
+	memset(display_buffer, (int)data, DISPLAY_BUFFER_SZ);
+	I2C_write(display_buffer, DISPLAY_BUFFER_SZ);
 }
 
 // end OLED management
@@ -142,26 +137,45 @@ static void fill_oled(unsigned char data){
 
 // ##################################################
 // ##################################################
+// Test code
+
+//test for pixel drawing
+void pixel_test(void){
+	drw_pixel_oled(0, 0);
+	drw_pixel_oled(0, 1);
+	drw_pixel_oled(0, 2);
+	drw_pixel_oled(0, 3);
+	drw_pixel_oled(0, 4);
+	drw_pixel_oled(0, 5);
+
+	drw_pixel_oled(20, 20);
+	drw_pixel_oled(20, 42);
+	drw_pixel_oled(66, 20);
+	drw_pixel_oled(80, 30);
+	drw_pixel_oled(90, 58);
+	drw_pixel_oled(128, 64);
+
+}
+
+// end test code
+// ##################################################
+// ##################################################
+
+
+
+// ##################################################
+// ##################################################
 // Driver code
+
+
 
 //function used when probing the i2c slave
 static int oled_probe(struct i2c_client *client, const struct i2c_device_id *id){
 	activate_oled();
 
-	//fill_oled(0x00);
-	//fill_oled(0xFF);
-	//fill_oled(0x00);
+	//pixel_test();
 
-	//drw_pixel_oled(0, 0);
-	//drw_pixel_oled(0, 1);
-	//drw_pixel_oled(0, 2);
-	//drw_pixel_oled(0, 3);
-	//drw_pixel_oled(0, 4);
-	//drw_pixel_oled(0, 5);
-
-	for(int i = 0; i < 30; i++){
-		drw_pixel_oled(0, i);
-	}
+	fill_oled(0xFF);
 
 	printk(KERN_ALERT "I2C OLED: PROBED!");
 
