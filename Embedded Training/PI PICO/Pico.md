@@ -6,6 +6,12 @@ https://www.raspberrypi.com/documentation/microcontrollers/raspberry-pi-pico.htm
 
 [Pico cmd line tool](https://github.com/raspberrypi/picotool)
 
+https://github.com/raspberrypi/pico-sdk
+
+https://datasheets.raspberrypi.com/pico/getting-started-with-pico.pdf?_gl=1*yfnd6r*_ga*MTM1NTAyODUwMy4xNzA4MTA2ODI5*_ga_22FD70LWDS*MTcwODEwNjgyOS4xLjEuMTcwODEwNjg2Mi4wLjAuMA..
+
+https://www.raspberrypi.com/documentation/microcontrollers/raspberry-pi-pico.html
+
 ## PICO notes
 
 Uses .uf2 files rather than .hex files
