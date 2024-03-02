@@ -4,6 +4,8 @@
 #include <linux/i2c.h>
 #include <linux/kernel.h>
 #include <linux/slab.h>
+#include <linux/font.h>
+#include <linux/string.h>
 
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Kyle Christie");
@@ -119,16 +121,71 @@ void drw_pixel_oled(int x, int y){
 	I2C_write(display_buffer, DISPLAY_BUFFER_SZ);
 }
 
-//function used to fill OLED screen 
+//function used to fill OLED screen
 /*
 Examples:
 	fill_oled(0xFF);	//fill with white (In b+w device)
 	fill_oled(0x00);	//fill with nothing (screen is blank)
 	fill_oled('a');		//results in a segmented fill
 */
-static void fill_oled(unsigned char data){
+void fill_oled(unsigned char data){
 	memset(display_buffer, (int)data, DISPLAY_BUFFER_SZ);
 	I2C_write(display_buffer, DISPLAY_BUFFER_SZ);
+}
+
+//function used to print chars to screen
+int drw_char_oled(int x, int y, char ch){
+	const struct font_desc *font = NULL;
+	int li_x, li_y;
+	uint8_t li_vert;
+	uint8_t *ptr;
+
+	//get default font
+	font = get_default_font(128, 64, 8, 8 );
+
+	if(!font){
+		printk(KERN_ALERT "OLED: drw_char_oled() - font doesn't exist");
+		return -1;
+	}
+
+	//assign char data to pointer
+	ptr = (uint8_t *) font->data + (ch * 8);
+
+	printk(KERN_DEBUG "Font name: %s, Char: %c", font->name, ch);
+
+	//use draw func to draw char into pixels
+	for(li_y = 0; li_y < 8; li_y++)
+	{
+
+		//copy pointer into position in buffer
+		memcpy(&li_vert, (ptr + li_y), sizeof(li_vert));
+
+		for(li_x = 0; li_x < 8; li_x++)
+		{
+			if(li_vert & 0x80)
+			{
+				drw_pixel_oled(x + li_x, y + li_y);
+			}
+
+			li_vert <<= 1;
+		}
+	}
+
+	return 0;
+}
+
+//function writes string to display (basic implementation)
+void drw_string_oled(int x, int y,  const char* str){
+
+	int len = strlen(str);
+
+	//draw each char
+	for(int i = 0; i < len; i++ )
+	{
+		drw_char_oled(x, y, str[i]);
+		//ensure appropriate gap between chars
+		x = x + 8;
+	}
 }
 
 // end OLED management
@@ -157,6 +214,25 @@ void pixel_test(void){
 
 }
 
+//test for filling screen
+void fill_test(void){
+	fill_oled(0xFF);
+}
+
+//test for writing individual chars
+void char_test(void){
+	drw_char_oled(8, 0, 'H');
+	drw_char_oled(16, 0, 'I');
+	drw_char_oled(24, 0, '!');
+}
+
+//test for writing string of chars
+void string_test(void){
+	drw_string_oled(8, 0, "Hello, World!");
+	drw_string_oled(0, 16, "Hello, again!");
+	drw_string_oled(0, 32, "Hello, three!");
+}
+
 // end test code
 // ##################################################
 // ##################################################
@@ -168,14 +244,15 @@ void pixel_test(void){
 // Driver code
 
 
-
 //function used when probing the i2c slave
 static int oled_probe(struct i2c_client *client, const struct i2c_device_id *id){
 	activate_oled();
 
-	//pixel_test();
 
-	fill_oled(0xFF);
+	//pixel_test();
+	//fill_test();
+	//char_test();
+	string_test();
 
 	printk(KERN_ALERT "I2C OLED: PROBED!");
 
@@ -185,11 +262,9 @@ static int oled_probe(struct i2c_client *client, const struct i2c_device_id *id)
 //function used to close down OLED connection when driver unloads
 static void oled_remove(struct i2c_client *client){
 
-	msleep(500);
-
 	write_oled(true, 0xAE);
 	printk(KERN_ALERT "I2C OLED: REMOVED!");
-} 
+}
 
 
 //declare struct which holds the id for the client device (OLED)
@@ -284,6 +359,8 @@ static void __exit oled_exit(void){
 // ##################################################
 // ##################################################
 
+//driver based on;
+// https://github.com/Dev4Embedded/ssd1306
 
 //define init and exit functions to use
 module_init(oled_init);
