@@ -6,6 +6,7 @@
 #include <linux/slab.h>
 #include <linux/font.h>
 #include <linux/string.h>
+#include <linux/fs.h>
 
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Kyle Christie");
@@ -133,6 +134,12 @@ void fill_oled(unsigned char data){
 	I2C_write(display_buffer, DISPLAY_BUFFER_SZ);
 }
 
+int clear_oled(void){
+	memset(display_buffer, 0x00, DISPLAY_BUFFER_SZ);
+	display_buffer[0] = 0x40;
+	return 0;
+}
+
 //function used to print chars to screen
 int drw_char_oled(int x, int y, char ch){
 	const struct font_desc *font = NULL;
@@ -191,6 +198,40 @@ void drw_string_oled(int x, int y,  const char* str){
 // end OLED management
 // ##################################################
 // ##################################################
+
+
+// ##################################################
+// ##################################################
+// Char device funcs
+
+int oled_ch_open (struct inode *pinode, struct file *pfile)
+{
+	printk(KERN_DEBUG "Opening OLED chdev");
+
+	clear_oled();
+
+	return 0;
+}
+
+ssize_t oled_ch_write(struct file *pfile, const char __user *buffer, size_t length, loff_t *offset)
+{
+	printk(KERN_DEBUG "--> %s writing %s", __FUNCTION__, buffer);
+
+	drw_string_oled(0, 0, buffer);
+
+	return length;
+}
+
+int oled_ch_close(struct inode *pinode, struct file *pfile)
+{
+	printk(KERN_DEBUG "Closing OLED chdev");
+	return 0;
+}
+
+// End char device
+// ##################################################
+// ##################################################
+
 
 // ##################################################
 // ##################################################
@@ -252,7 +293,7 @@ static int oled_probe(struct i2c_client *client, const struct i2c_device_id *id)
 	//pixel_test();
 	//fill_test();
 	//char_test();
-	string_test();
+	//string_test();
 
 	printk(KERN_ALERT "I2C OLED: PROBED!");
 
@@ -287,6 +328,13 @@ static struct i2c_driver oled_drv ={
 	.remove = oled_remove,
 	.id_table = oled_id,
 
+};
+
+struct file_operations oled_ch = {
+	.owner = THIS_MODULE,
+	.open = oled_ch_open,
+	.write = oled_ch_write,
+	.release = oled_ch_close,
 };
 
 //declare struct that holds the board info of the OLED
@@ -337,12 +385,18 @@ static int __init oled_init(void){
 	//I assume the line below basically initialises the i2c bus with all the previously set info
 	i2c_put_adapter(adapter);
 
+	//register character device to driver
+	register_chrdev(191, "OLED driver", &oled_ch);
+
 	printk(KERN_ALERT  "I2C OLED Driver added successfully");
 	return ret;
 }
 
 //define exit function for closing/freeing
 static void __exit oled_exit(void){
+	//unregister character device
+	unregister_chrdev(191, "OLED driver");
+
 	//unreg oled device and delete driver
 	i2c_unregister_device(client_oled);
 	i2c_del_driver(&oled_drv);
