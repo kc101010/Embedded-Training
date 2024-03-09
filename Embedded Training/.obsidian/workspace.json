@@ -20,14 +20,22 @@
             }
           },
           {
+            "id": "cb30bb7e52810778",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.5.3"
+              }
+            }
+          },
+          {
             "id": "914c8ee76c828125",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "GPIO kernel module/GPIO.md",
-                "mode": "source",
-                "source": false
+                "file": "GPIO kernel module/Raspberry-Pi-GPIO-Layout-Model-B-Plus-2700x900.png"
               }
             }
           },
@@ -37,41 +45,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Interrupts.md",
+                "file": "Rust/Rust GPIO/notes.md",
                 "mode": "source",
                 "source": false
               }
-            }
-          },
-          {
-            "id": "76349ed630d41114",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Glossary.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "8dc130eee2715830",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {}
-            }
-          },
-          {
-            "id": "b604890e9917f94e",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -145,7 +126,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "I2C OLED driver/i2c oled project notes.md",
+                "file": "GPIO kernel module/Raspberry-Pi-GPIO-Layout-Model-B-Plus-2700x900.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -162,7 +143,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "I2C OLED driver/i2c oled project notes.md",
+                "file": "GPIO kernel module/Raspberry-Pi-GPIO-Layout-Model-B-Plus-2700x900.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -185,7 +166,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "I2C OLED driver/i2c oled project notes.md"
+                "file": "GPIO kernel module/Raspberry-Pi-GPIO-Layout-Model-B-Plus-2700x900.png"
               }
             }
           }
@@ -206,38 +187,52 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b061a580182806c8",
+  "active": "914c8ee76c828125",
   "lastOpenFiles": [
+    "Rust/Rust GPIO/LED/Cargo.toml",
+    "Rust/Rust GPIO/LED/Cargo.lock",
+    "Rust/Rust GPIO/LED/src/main.rs",
+    "Rust/Rust GPIO/LED/src",
+    "Rust/Rust GPIO/LED",
+    "Rust/Rust GPIO/Cargo.toml",
+    "Rust/Rust GPIO/Cargo.lock",
+    "Rust/Rust GPIO/src/main.rs",
+    "Rust/Rust GPIO/src",
+    "GPIO kernel module/pi4j-rpi-400-pinout.png",
+    "GPIO kernel module/Raspberry-Pi-GPIO-Layout-Model-B-Plus-2700x900.png",
+    "GPIO kernel module/Raspberry-Pi-GPIO-Layout-Model-B-Plus-rotated-2700x900.png",
     "GPIO kernel module/GPIO.md",
-    "I2C OLED driver/i2c oled project notes.md",
+    "Rust/Rust GPIO/notes.md",
     "Interrupts.md",
+    "Glossary.md",
+    "Rust/Rust GPIO",
+    "Rust/Untitled.md",
+    "Rust",
+    "PI PICO/Pico.md",
+    "I2C OLED driver/Controlling an SSD1306 OLED with a Linux device driver..md",
+    "PI PICO/pico-sdk/src/rp2_common/README.md",
+    "PI PICO/pico-sdk/src/rp2040/README.md",
+    "PI PICO/pico-sdk/src/host/README.md",
+    "PI PICO/pico-sdk/src/common/README.md",
+    "PI PICO/pico-sdk/docs/weblinks_page.md",
+    "PI PICO/pico-sdk/docs/search.svg",
+    "PI PICO/pico-sdk/docs/rp2040.png",
+    "PI PICO/pico-sdk/docs/pico.jpg",
+    "PI PICO/pico-sdk/docs/mainpage.md",
+    "PI PICO/pico-sdk/docs/logo.svg",
+    "PI PICO/pico-sdk/docs/logo-mobile.svg",
+    "PI PICO/pico-sdk/docs/examples.md",
+    "PI PICO/pico-sdk/README.md",
+    "PI PICO/pico-sdk/CONTRIBUTING.md",
+    "RTOS.md",
+    "I2C OLED driver/i2c oled project notes.md",
     "Communication Protocols/I2C.md",
     "Study.md",
-    "Glossary.md",
     "FPGA.md",
-    "Untitled",
     "Embedded course/MCU Concepts.md",
     "GPIO kernel module/OLED Driver.md",
     "Embedded course/Intro.md",
-    "Embedded course",
-    "I2C OLED driver/i2c_OLED/Makefile",
-    "I2C OLED driver/i2c_OLED/i2c_OLED.c",
-    "I2C OLED driver/i2c_OLED",
-    "I2C OLED driver",
-    "I2C driver",
-    "GPIO kernel module/Raspberry-Pi-GPIO-Layout-Model-B-Plus-2700x900.png",
     "Electronics Theory/Capacitors.md",
-    "Electronics Theory/Untitled",
-    "Electronics Theory",
-    "Communication Protocols/I2C assets/i2c-protocol.webp",
-    "Communication Protocols/I2C assets",
-    "RTOS.md",
-    "Bin/OS Study CodeAcademy/Hardware.md",
-    "Communication Protocols/SPI.md",
-    "Communication Protocols/CAN.md",
-    "GPIO kernel module/Raspberry-Pi-GPIO-Layout-Model-B-Plus-rotated-2700x900.png",
-    "().md",
-    "Bin/OS Study CodeAcademy/Intro.md",
-    "Bin/OS Study CodeAcademy/OS Fundamentals.md"
+    "Communication Protocols/I2C assets/i2c-protocol.webp"
   ]
 }
