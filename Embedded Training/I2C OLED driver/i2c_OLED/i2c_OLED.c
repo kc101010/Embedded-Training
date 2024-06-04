@@ -286,7 +286,7 @@ void string_test(void){
 
 
 //function used when probing the i2c slave
-static int oled_probe(struct i2c_client *client, const struct i2c_device_id *id){
+static int oled_probe(struct i2c_client *client){
 	activate_oled();
 
 
