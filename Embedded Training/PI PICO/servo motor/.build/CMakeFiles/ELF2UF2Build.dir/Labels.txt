@@ -1,0 +1,13 @@
+# Target labels
+ ELF2UF2Build
+# Source files and their labels
+/mnt/15f210d7-aa4f-4ea8-a4b3-2bd52aeba8fc/Programming/Uni/Year 4 Hons/Embedded Training/Embedded Training/PI PICO/servo motor/build/CMakeFiles/ELF2UF2Build
+/mnt/15f210d7-aa4f-4ea8-a4b3-2bd52aeba8fc/Programming/Uni/Year 4 Hons/Embedded Training/Embedded Training/PI PICO/servo motor/build/CMakeFiles/ELF2UF2Build.rule
+/mnt/15f210d7-aa4f-4ea8-a4b3-2bd52aeba8fc/Programming/Uni/Year 4 Hons/Embedded Training/Embedded Training/PI PICO/servo motor/build/CMakeFiles/ELF2UF2Build-complete.rule
+/mnt/15f210d7-aa4f-4ea8-a4b3-2bd52aeba8fc/Programming/Uni/Year 4 Hons/Embedded Training/Embedded Training/PI PICO/servo motor/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-build.rule
+/mnt/15f210d7-aa4f-4ea8-a4b3-2bd52aeba8fc/Programming/Uni/Year 4 Hons/Embedded Training/Embedded Training/PI PICO/servo motor/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-configure.rule
+/mnt/15f210d7-aa4f-4ea8-a4b3-2bd52aeba8fc/Programming/Uni/Year 4 Hons/Embedded Training/Embedded Training/PI PICO/servo motor/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-download.rule
+/mnt/15f210d7-aa4f-4ea8-a4b3-2bd52aeba8fc/Programming/Uni/Year 4 Hons/Embedded Training/Embedded Training/PI PICO/servo motor/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-install.rule
+/mnt/15f210d7-aa4f-4ea8-a4b3-2bd52aeba8fc/Programming/Uni/Year 4 Hons/Embedded Training/Embedded Training/PI PICO/servo motor/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-mkdir.rule
+/mnt/15f210d7-aa4f-4ea8-a4b3-2bd52aeba8fc/Programming/Uni/Year 4 Hons/Embedded Training/Embedded Training/PI PICO/servo motor/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-patch.rule
+/mnt/15f210d7-aa4f-4ea8-a4b3-2bd52aeba8fc/Programming/Uni/Year 4 Hons/Embedded Training/Embedded Training/PI PICO/servo motor/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-update.rule

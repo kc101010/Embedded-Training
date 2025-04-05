@@ -29,3 +29,6 @@ Uses cmake/make build chain
 To program the pico again, connect it to the PC while holding the bootloader select button. 
 
 
+## PICO PWM
+https://www.i-programmer.info/programming/hardware/14849-the-pico-in-c-basic-pwm.html?start=1
+
