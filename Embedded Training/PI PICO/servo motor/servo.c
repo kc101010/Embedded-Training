@@ -30,9 +30,12 @@ uint32_t pwm_set_freq_duty(uint slice, uint chan, uint32_t f, int d)
 
     return wrap;
 }
+pwm_set_freq_duty(servo_pwm_slice, servo_chan, 50, 7864 );
+pwm_set_enabled(servo_pwm_slice, true);**/    
 
-/**pwm_set_freq_duty(servo_pwm_slice, servo_chan, 50, 7864 );
-        pwm_set_enabled(servo_pwm_slice, true);**/    
+
+//this code inspired by;
+//https://www.youtube.com/watch?app=desktop&v=kpOG2eTOzzA
 
 void ServoMoveTo(float degree)
 {
